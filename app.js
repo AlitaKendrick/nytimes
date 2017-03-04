@@ -19,5 +19,10 @@ $(".searchButton").on("click", function(event) {
 	event.preventDefault();
 	var searchTerm = $("#searchTerm").val();
 	console.log(searchTerm);
+
+	var resultDiv = $("<div class='search'>");
+	var response = result.response.doc;
+
+	var pResult = $("<p>").text(response.headline.main);
 })
 

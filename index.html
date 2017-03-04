@@ -1,9 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>NyTimes API</title>
+
+<meta charset="UTF-8">
+ 
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+<title> </title>
+
+<!-- Link to bootstrap -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+
+
 </head>
+
 <body>
+<div class="container">
+	<!-- Header row -->
+	<div class="row">
+		<h1> New York Times Search </h1>
+	</div>
+	
+	<!-- Search Parameters row -->
+	<div class="row">
+		<div class="searchParamters col-md-12">
+		<form>
+			<div class="form-group">
+				<label for="searchTerm">Search term:</label>
+				<input type="text" class="form-control" id="searchTerm">
+			</div>
+
+			<select class="form-control numRecords">
+		    	<option>1</option>
+		    	<option>5</option>
+		    	<option>10</option>
+		   </select>
+
+			<div class="form-group">
+				<label for="startYear">Start Year (Optional):</label>
+			 	<input type="password" class="form-control" id="startYear">
+			</div>			
+
+			<div class="form-group">
+				<label for="endYear">End Year (Optional):</label>
+			 	<input type="password" class="form-control" id="endYear">
+			</div>
+
+			<button type="submit" class="btn btn-default searchButton">Search</button>
+			<button type="submit" class="btn btn-default clearButton">Clear</button>
+
+		</form>
+		</div>
+	</div>
+
+	<!-- Search results row -->
+	<div class="row">
+		<div class="searchResults col-md-12">
+
+		</div>
+
+	</div>
+
+</div>
+<!-- Link to JQuery and javascript file-->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script src="app.js"></script>
 
 </body>
+
 </html>
